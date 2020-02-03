@@ -1,30 +1,29 @@
-var btn = document.getElementById('btn');
-var hexCodeLetters = ['a', 'b', 'c', 'd', 'e', 'f'];
-var letterArr = [];
-var numberArr = [];
-var hexCode = [];
+var btn, hexCodeLetters, letterArr, numberArr, hexCode, backgroundCol;
 
+btn = document.getElementById('btn');
 
 
 btn.addEventListener('click', function() {
-    var backgroundCol = shuffle(createHexCode());
-    console.log(backgroundCol);
+    backgroundCol = shuffle(createHexCode());
     document.body.style.backgroundColor = '#' + backgroundCol;
-    letterArr = [];
-    numberArr = [];
-    hexCode = [];
     document.getElementById('hex-code').textContent = backgroundCol;
     
 });
 
-
-
+//produces a random number
 
 function randomNumber(range) {
     return Math.floor(Math.random() * range);
 }
 
+//function to create a hexcode
+
 function createHexCode() {
+    hexCodeLetters = ['a', 'b', 'c', 'd', 'e', 'f'];
+    letterArr = [];
+    numberArr = [];
+    hexCode = [];
+
 
     for (var i = 0; i < 6; i++) {
         letterArr.push(hexCodeLetters[randomNumber(6)]);
@@ -42,6 +41,7 @@ function createHexCode() {
     return hexCode;
 }
 
+//function to shuffle array to randomize the hexcode
 
 function shuffle(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;
@@ -51,6 +51,7 @@ function shuffle(array) {
   
       // Pick a remaining element...
       randomIndex = Math.floor(Math.random() * currentIndex);
+      randomIndex = randomNumber(currentIndex);
       currentIndex -= 1;
   
       // And swap it with the current element.
