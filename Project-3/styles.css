@@ -1,0 +1,31 @@
+body {
+    background-color: #AF3B6E;
+    color: #3B3B58;
+    font-size: larger;
+}
+
+h1 {
+    margin: 0 auto;
+    text-align: center;
+}
+
+button {
+    padding: 1.5em;
+    margin: 0 auto;
+    background-color: #7A5980;
+    border: none;
+    font-size: large;
+    border-radius: 10px;
+    color: #424651;
+    
+}
+
+.container {
+    width: 50em;
+    height: 10em;
+    margin: 1em auto;
+    padding: 2em;
+    background-color: #C492B1;
+    text-align: center;
+}
+
