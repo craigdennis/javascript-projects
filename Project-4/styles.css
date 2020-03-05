@@ -1,0 +1,27 @@
+body {
+    background-color: #266DD3;
+}
+
+input {
+    width: 75%;
+    height: 3em;
+    margin-bottom: 1.5em;
+}
+
+button {
+    padding: 0.5em 1em;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #8C8C8C;
+    color: #F7F0F5;
+}
