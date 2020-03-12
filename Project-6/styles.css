@@ -1,3 +1,48 @@
+h1 {
+    text-align: center;
+}
+
+button {
+    border: none;
+    font-size: 2rem;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    outline: none;
+}
+
+
+.slider {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#left:hover, #right:hover {
+    background-color: white;
+    color: #4393CA;
+    border: 3px solid #4393CA;
+}
+
+
+#left {
+    position: absolute;
+    top:50%;
+    left:23%;
+    background-color: #4393CA;
+    border: 3px solid #4393CA;
+}
+#right {
+    position: absolute;
+    top:50%;
+    right:23%;
+    background-color: #4393CA;
+    border: 3px solid #4393CA;
+}
+
+
 #image {
-    height: 100px;
+    width: 50%;
+    border: 10px solid #4393CA;
+    border-radius: 15px;
 }
