@@ -1,0 +1,17 @@
+.heading {
+    text-align: center;
+}
+
+.container {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 1em;
+
+}
+
+#customer-image, #star {
+    width:25%;
+    margin: 0 auto;
+}
