@@ -1,17 +1,53 @@
+button {
+  font-size: 2rem;
+  border: 1px solid black;
+  outline: none;
+  border: none;
+}
+
 .heading {
-    text-align: center;
+  text-align: center;
+  margin-bottom: 5em;
 }
 
 .container {
-    width: 50%;
-    text-align: center;
-    margin: 0 auto;
-    border: 1px solid black;
-    padding: 1em;
-
+  position: relative;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 1em;
 }
 
-#customer-image, #star {
-    width:25%;
-    margin: 0 auto;
+#star {
+  width: 25%;
+  margin: 0 auto;
+}
+
+#customer-image {
+  position: absolute;
+  border-radius: 50%;
+  width: 15%;
+  top: -4em;
+  left: 43%;
+}
+
+#left {
+  position: absolute;
+  top: 45%;
+  left: -7%;
+}
+
+#right {
+  position: absolute;
+  top: 45%;
+  right: -7%;
+}
+
+#left:hover, #right:hover {
+    color: red;
+}
+
+#name {
+    margin-top: 4em;
 }
